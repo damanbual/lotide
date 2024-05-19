@@ -1,0 +1,13 @@
+var originalWords = process.argv.slice(2);
+var pigLatinWords = [];
+for (var i = 0; i < originalWords.length; i++) {
+    console.log(originalWords[i]);  // Debugging log
+    pigLatinWords.push(translateToPigLatin(originalWords[i]));
+}
+console.log(pigLatinWords.join(" "));
+function translateToPigLatin(word) {
+    console.log("Word:", word);  // Debugging log
+    console.log("First letter:", word[0]);  // Debugging log
+    console.log("Rest of word:", word.slice(1));  // Debugging log
+    return word.slice(1) + word[0] + 'ay';
+}
