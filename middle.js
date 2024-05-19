@@ -50,3 +50,4 @@ assertArraysEqual(middle([0]), []); // Should pass
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7, 8, 9]), [5]); // Should pass
 assertArraysEqual(middle([10, 20, 30, 40, 50, 60, 70]), [40]); // Should pass
 assertArraysEqual(middle([5, 10, 15, 20, 25, 30, 35, 40]), [20, 25]); // Should pass
+
