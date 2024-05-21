@@ -1,3 +1,4 @@
+/* eslint-disable func-style */
 
 function assertEqual(actual, expected) {
   if (actual === expected) {
@@ -9,7 +10,7 @@ function assertEqual(actual, expected) {
 
 // tail function
 function tail(array) {
-  return array.slice(1); 
+  return array.slice(1);
 }
 
 // Test
