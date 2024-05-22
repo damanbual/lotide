@@ -1,14 +1,18 @@
 
-// assertEqual Funciton
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+// eqArrays and assertArraysEqual Functions
+
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
   }
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
 };
 
-// assertArraysEqual Function
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${JSON.stringify(actual)} === ${JSON.stringify(expected)}`);
@@ -17,12 +21,13 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-
 // Function called letterPositions
 const letterPositions = function (sentence) {
   const results = {};
   // logic to update results here
   return results;
 };
+
+
 
 
