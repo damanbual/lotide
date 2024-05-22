@@ -18,6 +18,18 @@ const eqArrays = function(array1, array2) {
       return false;
     }
   }
+
+  for (let key of keys1) {
+    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
+      //  eqArrays to compare arrays
+      if (!eqArrays(object1[key], object2[key])) {
+        return false;
+      }
+    } else if (object1[key] !== object2[key]) {
+      return false;
+    }
+  }
+
   return true;
 };
 
