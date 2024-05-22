@@ -8,7 +8,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-// Function to find key by value in an object 
+// Function to find key by value in an object
 const findKeyByValue = function(object, value) {
   for (const key in object) {
     if (object[key] === value) {
@@ -20,7 +20,7 @@ const findKeyByValue = function(object, value) {
 
 // Test cases
 const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
+  sci_Fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama: "The Wire",
 };
