@@ -30,5 +30,5 @@ const letterPositions = function (sentence) {
 
 // Small String Test "hello"
 const result = countLetters("hello");
-assertArraysEqual(Object.keys(result),['h', 'e', 'l', 'o']);
+assertArraysEqual(letterPositions("hello").e, [1]);
 
