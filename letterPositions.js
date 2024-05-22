@@ -28,6 +28,7 @@ const letterPositions = function (sentence) {
   return results;
 };
 
-
-
+// Small String Test "hello"
+const result = countLetters("hello");
+assertArraysEqual(Object.keys(result),['h', 'e', 'l', 'o']);
 
