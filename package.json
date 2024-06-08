@@ -1,12 +1,12 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "A collection of utility functions for arrays and objects",
+  "description": "A mini lodash clone called lotide, not for production grade use",
   "main": "index.js",
   "scripts": {
   "test": "mocha"
 },
-  "author": "Your Name",
+  "author": "Daman Bual",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.1",
